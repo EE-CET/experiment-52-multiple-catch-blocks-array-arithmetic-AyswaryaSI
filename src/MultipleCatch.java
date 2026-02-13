@@ -1,14 +1,23 @@
-import java.util.Scanner;
-
-public class MultipleCatch {
-    
-        // TODO: Read N
-        // TODO: Create array and read N integers
-        // TODO: Read index
-        // TODO: Read divisor
-        
-        // TODO: 
-        // TODO: catch ArrayIndexOutOfBoundsException -> Print "Invalid Index"
-        // TODO: catch ArithmeticException -> Print "Divide by zero error"
-    
-}
+import java.util.scanner;
+public class MultipleCatch{
+       public static void main(String[]args){
+                   Scanner sc = new Scanner(System.in):
+                   int N = sc.nextInt();
+                   int[] arr = new int[N];
+                   for(int i=0;i<n;i++){
+                        arr[i] = sc.nextInt();
+                   }
+                   int index = sc.nextInt();
+                   int divisor = sc.nextInt();
+                   
+                   try{
+                        int result = arr[index] / divisor;
+                        System.out.println(result);
+                   } catch(ArrayIndexOutOfBoundsException e){
+                              System.out.print("Invalid Index");
+                     }
+                     catch(ArrayIndexOutOfBoundsException e){
+                              System.out.print("Divide by Zero error");
+                     }
+       }
+}            
